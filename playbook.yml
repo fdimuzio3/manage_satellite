@@ -1,0 +1,13 @@
+- hosts: all
+  roles:
+    - role: rhsm
+  vars:
+    rhsm_username: admin
+    rhsm_password: redhat
+    rhsm_auto_attach: true
+    rhsm_repositories:
+      only:
+        - rhel-7-server-rpms
+        - rhel-7-server-optional-rpms
+        - rhel-7-server-extras-rpms
+    rhsm_release: 7Server
