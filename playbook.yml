@@ -1,6 +1,3 @@
----
-- name: Register to Satellite
-
 - hosts: rhsm-servers
   roles:
     - role: oasis_roles.rhsm
