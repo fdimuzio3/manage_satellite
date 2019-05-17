@@ -1,4 +1,4 @@
-- hosts: rhsm-servers
+- hosts: all
   roles:
     - role: oasis_roles.rhsm
   vars:
