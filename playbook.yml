@@ -1,6 +1,6 @@
 - hosts: all
   roles:
-    - role: rhsm
+    - role: oasis_roles.rhsm
   vars:
     rhsm_username: admin
     rhsm_password: redhat
