@@ -1,13 +1,10 @@
-- hosts: all
+---
+- name: Register to Satellite
+
+- hosts: rhsm-servers
   roles:
     - role: oasis_roles.rhsm
   vars:
-    rhsm_username: admin
-    rhsm_password: redhat
-    rhsm_auto_attach: true
-    rhsm_repositories:
-      only:
-        - rhel-7-server-rpms
-        - rhel-7-server-optional-rpms
-        - rhel-7-server-extras-rpms
-    rhsm_release: 7Server
+    rhsm_org_id: RedHat
+    rhsm_activitionkey: ak-Reg_To_Dev_EL7
+    rhsm_server_hostname: sat64.example.local
