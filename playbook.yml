@@ -2,6 +2,6 @@
   roles:
     - role: oasis_roles.rhsm
   vars:
-    rhsm_org_id: RedHat
-    rhsm_activationkey: ak-Reg_To_Dev_EL7
-    rhsm_server_hostname: sat64.example.local
+    rhsm_org_id: Default_Organization
+    rhsm_activationkey: demo_key
+    rhsm_server_hostname: sat6.thinkpad.demo
