@@ -1,7 +1,9 @@
 - hosts: all
   roles:
-    - role: oasis_roles.rhsm
+    - role: rhsm
   vars:
     rhsm_org_id: Default_Organization
-    rhsm_activationkey: demo_key
+    rhsm_activitionkey: demo_key
+    rhsm_pool_ids:
+      - poolid
     rhsm_server_hostname: sat6.thinkpad.demo
